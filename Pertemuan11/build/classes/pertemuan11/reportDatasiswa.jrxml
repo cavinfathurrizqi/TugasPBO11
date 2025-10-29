@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="873ef1d4-d708-48b7-baba-336fbee1c55d">
+	<property name="ireport.zoom" value="1.0000000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from datasiswa order by absen;]]>
+	</queryString>
+	<field name="nama" class="java.lang.String"/>
+	<field name="absen" class="java.lang.Integer"/>
+	<field name="wali_kelas" class="java.lang.String"/>
+	<field name="wali_murid" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="149" y="0" width="303" height="37" uuid="e05f5d62-d437-4f0f-9e2e-b721f0c3c084"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SD NEGERI 99 PONGRAKKA]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="0" y="0" width="134" height="69" uuid="f3e880af-b5dd-4d77-978e-1fc66eec2ff1"/>
+				<imageExpression><![CDATA["C:\\Users\\LENOVO\\Documents\\lib\\sd.jfif"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="134" y="37" width="354" height="32" uuid="1ff5ef92-6caf-4580-9268-fc4cb0e0888b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Pongrakka No. 99, Desa Pongrakka, Kecamatan Turi,
+Kabupaten Lamongan, Provinsi Jawa Timur, Kode Pos 62252.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="75" width="531" height="1" uuid="bb5faf98-d0a6-4422-8892-6a89c833b90f"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="63" y="32" width="122" height="29" uuid="430f9c0f-daec-42d6-a99e-43d0074819ba"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="163" y="32" width="122" height="29" uuid="44c4313a-b50a-4aea-90b3-64c2a122a7e4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="363" y="32" width="122" height="29" uuid="571a1c60-1c6b-4ed5-bf1d-0f6103ac4ffc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="263" y="32" width="122" height="29" uuid="5889d245-475d-40b7-a5ff-a63ce6240307"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="63" y="31" width="100" height="30" uuid="a8eb688f-a508-4c51-ba0d-d6023252eca4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="31" width="100" height="30" uuid="7c08cb86-3122-4210-bc88-bb1175b0a5b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ABSEN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="31" width="122" height="30" uuid="6bc0cf09-9bec-4846-9c21-64337e6e81e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WALI KELAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="31" width="100" height="30" uuid="2ac8223f-120e-4784-935d-8cf27060a8a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WALI MURID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="63" y="0" width="122" height="29" uuid="a7ead683-6e92-4c91-aae8-87d01429b848"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="163" y="0" width="122" height="29" uuid="e294bce4-8b07-40fa-bf5e-74591a89344c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="363" y="0" width="122" height="29" uuid="5362048f-9da7-494c-aea4-ea03439aa034"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="263" y="0" width="122" height="29" uuid="f17e6b83-5455-4741-b3da-8793ab1b88a1"/>
+			</rectangle>
+			<textField>
+				<reportElement x="73" y="0" width="90" height="29" uuid="fc6a5a92-d720-4e99-8eb9-9da76cd6eace"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="1" width="100" height="29" uuid="eeeced3b-05d6-4808-a5bf-06f9cd21a2f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{absen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="0" width="114" height="29" uuid="529f0082-7f1c-4fee-aee4-cd4a84fda182"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wali_kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="0" width="90" height="29" uuid="471456d2-d590-487e-bd8c-48cfca62602b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wali_murid}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="239" splitType="Stretch">
+			<staticText>
+				<reportElement x="395" y="24" width="57" height="20" uuid="59bb80c7-47be-4a60-a038-523de91178a1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Surabaya,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="455" y="24" width="100" height="20" uuid="19e9fd55-a937-43a2-bbaf-17e9a05a18f2"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="424" y="44" width="100" height="20" uuid="f2d17719-0cc8-481e-b002-2c32210ea61c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="118" width="139" height="20" uuid="8ab6253f-6ae3-4f5f-81d0-1c68d231b9da"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Becce Rosdiana,S.Pd.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
